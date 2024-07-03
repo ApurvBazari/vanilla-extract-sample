@@ -1,0 +1,33 @@
+{
+  "name": "sample-consumer-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "client": "tsc -p ./tsconfig.client.json && webpack --mode development --config ./webpack.config.js",
+    "build": "tsc",
+    "all": "npm run build && npm run client && npm start && node --preserve-symlinks-main"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@vanilla-extract/css": "^1.15.3",
+    "@vanilla-extract/webpack-plugin": "^2.3.10",
+    "babel-loader": "^9.1.3",
+    "express": "^4.19.2",
+    "mini-css-extract-plugin": "^2.9.0",
+    "my-component-library": "../component-library/packages/my-component-library",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.92.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

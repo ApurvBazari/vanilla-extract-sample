@@ -1,0 +1,28 @@
+{
+  "name": "my-component-library-divider",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "types": "dist/index.d.ts",
+  "main": "dist/cjs/my-component-library-divider.js",
+  "module": "dist/esm/my-component-library-divider.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node ../../buildPackage.js --packages divider"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.14.2",
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0"
+  },
+  "dependencies": {
+    "my-component-library-theme": "^1.0.0"
+  }
+}

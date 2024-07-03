@@ -1,0 +1,27 @@
+{
+  "name": "my-component-library",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "types": "dist/index.d.ts",
+  "main": "dist/cjs/my-component-library.js",
+  "module": "dist/esm/my-component-library.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node ../../buildPackage.js --packages my-component-library"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.14.2",
+    "react": ">=16"
+  },
+  "dependencies": {
+    "my-component-library-divider": "^1.0.0",
+    "my-component-library-theme": "^1.0.0",
+    "my-component-library-button": "^1.0.0"
+  }
+}

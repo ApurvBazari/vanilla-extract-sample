@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./client",
+    "allowUnusedLabels": false,
+    "declaration": false,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": ["es2020", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "target": "es2020",
+    "version": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "node_modules",
+  ]
+}

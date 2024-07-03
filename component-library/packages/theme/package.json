@@ -1,0 +1,22 @@
+{
+  "name": "my-component-library-theme",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "author": "",
+  "main": "dist/cjs/my-component-library-theme.js",
+  "module": "dist/esm/my-component-library-theme.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node ../../buildPackage.js --packages theme"
+  },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.14.2",
+    "react": ">=16"
+  }
+}

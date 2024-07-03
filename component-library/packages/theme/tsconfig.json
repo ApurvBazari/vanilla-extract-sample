@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "incremental": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "module": "esNext",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false, // destructing assignment is annoying with this on.
+    "target": "ESNext", // we're not compiling with typescript, just typechecking. babel compiles for us.
+    "outDir": "./dist/",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["../../typings/**/*", "./typings/**/*", "./src/**/*"],
+  "exclude": ["./src/__tests__/*", "node_modules"],
+}
+  
